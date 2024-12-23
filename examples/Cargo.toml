@@ -5,3 +5,8 @@ members = [
     "parse_tracev3", 
     "unifiedlog_iterator",
 ]
+
+[profile.release]
+opt-level = 3
+codegen-units = 1
+lto = "thin"
